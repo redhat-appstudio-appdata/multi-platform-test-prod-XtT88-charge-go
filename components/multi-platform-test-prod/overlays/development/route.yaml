@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: multi-platform-test-prod
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: multi-platform-test-prod
+    app.kubernetes.io/part-of: multi-platform-test-prod
+  name: multi-platform-test-prodsoel
+spec:
+  path: /
+  port:
+    targetPort: 8081
+  to:
+    kind: Service
+    name: multi-platform-test-prod
+    weight: null
+status: {}
