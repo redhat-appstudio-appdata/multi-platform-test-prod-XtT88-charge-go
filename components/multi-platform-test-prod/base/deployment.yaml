@@ -10,7 +10,7 @@ metadata:
     app.kubernetes.io/part-of: multi-platform-test-prod
   name: multi-platform-test-prod
 spec:
-  replicas: 1
+  replicas: 0
   revisionHistoryLimit: 0
   selector:
     matchLabels:
